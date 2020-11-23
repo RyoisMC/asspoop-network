@@ -4,6 +4,19 @@
     b-navbar-toggle(target="nav-collapse")
     b-collapse#nav-collapse(is-nav)
       b-navbar-nav
-        b-nav-item(to="/dynmap/survival" active-class="active") Survival Map
-        b-nav-item(to="/dynmap/creative" active-class="active") Creative Map
+        <menu-item v-for="(r,i) in routes" :key="i" :route="r"></menu-item>
+
 </template>
+<script>
+export default {
+  name: "navbar",
+  components: {
+    MenuItem: () => import("./menuItem")
+  },
+  computed: {
+    routes() {
+      return this.$router.options.routes;
+    }
+  }
+};
+</script>

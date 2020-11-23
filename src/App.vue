@@ -1,19 +1,16 @@
 <template lang="pug">
   #app
-    globalPreloader
     globalNav
     router-view
 </template>
 
 <script>
 import globalNav from "./components/globalNav.vue";
-import globalPreloader from "./components/globalPreloader.vue";
 
 export default {
   name: "App",
   components: {
     globalNav,
-    globalPreloader
   },
 };
 </script>
@@ -24,5 +21,9 @@ html {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  background-color: #121212;
+}
+#app {
+  background-color: #121212;
 }
 </style>

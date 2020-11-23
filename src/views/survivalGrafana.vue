@@ -1,6 +1,6 @@
 <template>
   <div id="embedBodyFrame">
-    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://creative.asspoop.com/"></iframe>
+    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://stats.asspoop.com/d/survival-minecraft/survival-minecraft-server?orgId=1&refresh=1s&kiosk"></iframe>
   </div>
 </template>
 <style scoped>

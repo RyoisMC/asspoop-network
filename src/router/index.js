@@ -1,15 +1,21 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import playerBackground from '../views/playerBackground.vue';
 import survivalDynmap from '../views/survivalDynmap.vue';
 import creativeDynmap from '../views/creativeDynmap.vue';
+import mc01netdata from '../views/mc01netdata.vue';
+import survivalGrafana from '../views/survivalGrafana.vue';
+import creativeGrafana from '../views/creativeGrafana.vue';
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
         name: 'Home',
+        component: playerBackground,
         meta: {
             title: 'Home',
+            visible: true
         },
     },
     {
@@ -18,6 +24,7 @@ const routes = [
         component: survivalDynmap,
         meta: {
             title: 'Survival Dynmap',
+            visible: true
         },
     },
     {
@@ -26,8 +33,36 @@ const routes = [
         component: creativeDynmap,
         meta: {
             title: 'Creative Dynmap',
+            visible: true
         },
-      }
+    },
+    {
+      path: '/grafana/server/survival',
+      name: 'Survival Server Stats',
+      component: survivalGrafana,
+      meta: {
+          title: 'Survival Server Stats',
+          visible: true
+      },
+    },
+    {
+      path: '/grafana/server/creative',
+      name: 'Creative Server Stats',
+      component: creativeGrafana,
+      meta: {
+          title: 'Creative Server Stats',
+          visible: true
+      },
+    },
+    {
+      path: '/netdata/mc01',
+      name: 'MC01 Server Stats',
+      component: mc01netdata,
+      meta: {
+          title: 'MC01 Server Stats',
+          visible: true
+      },
+  },
   ];
 
 const router = new VueRouter({

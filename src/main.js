@@ -13,6 +13,9 @@ Vue.use(IconsPlugin);
 Vue.component('pulse-loader', require('vue-spinner/src/PulseLoader.vue'));
 
 new Vue({
+  data: {
+    snowRepeat: 3
+  },
   router,
   render: h => h(App),
 }).$mount('#app')

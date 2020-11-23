@@ -1,6 +1,6 @@
 <template>
   <div id="embedBodyFrame">
-    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://survival.asspoop.com/"></iframe>
+    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://netdata.mc-01.atl.ga.us.asspoop.com/"></iframe>
   </div>
 </template>
 <style scoped>
@@ -10,5 +10,6 @@
   right: 0;
   bottom: 0;
   top: 54px;
+  background-color: #121212;
 }
 </style>

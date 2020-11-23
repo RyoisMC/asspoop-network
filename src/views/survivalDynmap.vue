@@ -10,5 +10,6 @@
   right: 0;
   bottom: 0;
   top: 54px;
+  background-color: #121212;
 }
 </style>
