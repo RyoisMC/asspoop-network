@@ -1,33 +1,28 @@
-<template>
-  <div id="app">
-    <globalNav/>
-  </div>
+<template lang="pug">
+  #app
+    globalPreloader
+    globalNav
+    router-view
 </template>
 
 <script>
-import globalNav from './components/globalNav.vue'
+import globalNav from "./components/globalNav.vue";
+import globalPreloader from "./components/globalPreloader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    globalNav
-  }
-}
+    globalNav,
+    globalPreloader
+  },
+};
 </script>
-
 <style>
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden;
-}
-
-#content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 54px;
 }
 </style>

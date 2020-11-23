@@ -11,7 +11,8 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -20,6 +21,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "vue-router": "^3.4.9",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
