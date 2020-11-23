@@ -1,6 +1,6 @@
 <template>
   <div id="embedBodyFrame">
-    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://survival.asspoop.com/"></iframe>
+    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://asspoop.com/maps/proxy/survival/"></iframe>
   </div>
 </template>
 <style scoped>
