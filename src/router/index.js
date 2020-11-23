@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import homepage from '../views/homepage.vue';
 import survivalDynmap from '../views/dynmap/survival.vue';
 import creativeDynmap from '../views/dynmap/creative.vue';
-import mc01netdata from '../views/netdata/mc01.vue';
+import mc01Grafana from '../views/grafana/mc01.vue';
 import survivalGrafana from '../views/grafana/survival.vue';
 import creativeGrafana from '../views/grafana/creative.vue';
 Vue.use(VueRouter);
@@ -55,9 +55,9 @@ const routes = [
       },
     },
     {
-      path: '/netdata/server/mc01',
+      path: '/grafana/server/mc01',
       name: 'MC01 Server Stats',
-      component: mc01netdata,
+      component: mc01Grafana,
       meta: {
           title: 'MC01 Server Stats',
           visible: true

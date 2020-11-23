@@ -1,6 +1,6 @@
 <template>
   <div id="embedBodyFrame">
-    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://netdata.mc-01.atl.ga.us.asspoop.com/"></iframe>
+    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://stats.asspoop.com/d/rYdddlPWk/mc01-server-stats?orgId=1&refresh=5s&kiosk"></iframe>
   </div>
 </template>
 <style scoped>
