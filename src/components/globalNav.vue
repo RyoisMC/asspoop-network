@@ -20,3 +20,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+ .navbar.navbar-dark.bg-dark{
+    background-color: #000000!important;
+ }
+</style>

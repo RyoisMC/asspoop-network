@@ -5,7 +5,7 @@
     </li>
 
     <div v-if="route.children && route.children.length">
-      <menu-item v-for="(r, i) in route.children" :key="i" :route="r" class="ml-3"></menu-item>
+      <menu-item v-for="(route, index) in route.children" :key="index" :route="route" class="ml-3"></menu-item>
     </div>
   </div>
 </template>

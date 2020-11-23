@@ -21,9 +21,10 @@ html {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #121212;
+  background-color: #000000;
 }
 #app {
-  background-color: #121212;
+  height: 100%;
+  background-color: #000000;
 }
 </style>
