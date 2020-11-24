@@ -6,6 +6,8 @@ import creativeDynmap from '../views/dynmap/creative.vue';
 import mc01Grafana from '../views/grafana/mc01.vue';
 import survivalGrafana from '../views/grafana/survival.vue';
 import creativeGrafana from '../views/grafana/creative.vue';
+import pageNotFound from '../views/pageNotFound.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -62,7 +64,16 @@ const routes = [
           title: 'MC01 Server Stats',
           visible: true
       },
-  },
+    },
+    {
+      path: '*',
+      name: '404 Not Found',
+      component: pageNotFound,
+      meta: {
+          title: '404 Not Found',
+          visible: false
+      },
+    }, 
 ];
 
 const router = new VueRouter({
