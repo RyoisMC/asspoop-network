@@ -5,7 +5,6 @@
     b-collapse#nav-collapse(is-nav)
       b-navbar-nav
         <menu-item v-for="(r,i) in routes" :key="i" :route="r"></menu-item>
-
 </template>
 <script>
 export default {

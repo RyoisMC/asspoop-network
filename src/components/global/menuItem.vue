@@ -1,13 +1,9 @@
-<template>
-  <div>
-    <li v-if="isVisible" class="nav-item">
-      <router-link exact-active-class="active" :to="{ name: route.name }" class="nav-link">{{ name }}</router-link>
-    </li>
-
-    <div v-if="route.children && route.children.length">
-      <menu-item v-for="(route, index) in route.children" :key="index" :route="route" class="ml-3"></menu-item>
-    </div>
-  </div>
+<template lang="pug">
+div
+  li.nav-item(v-if='isVisible')
+    router-link.nav-link(exact-active-class='active' :to='{ name: route.name }') {{ name }}
+  div(v-if='route.children && route.children.length')
+    menu-item.ml-3(v-for='(route, index) in route.children' :key='index' :route='route')
 </template>
 
 <script>

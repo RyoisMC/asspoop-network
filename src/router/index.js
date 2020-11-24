@@ -63,7 +63,7 @@ const routes = [
           visible: true
       },
   },
-  ];
+];
 
 const router = new VueRouter({
     mode: 'history',

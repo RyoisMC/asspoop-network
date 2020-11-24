@@ -1,15 +1,20 @@
-<template>
-  <div id="embedBodyFrame">
-    <iframe name="iframe" width="100%" height="100%" frameborder="0" src="https://stats.asspoop.com/d/survival-minecraft/survival-minecraft-server?orgId=1&refresh=1s&kiosk"></iframe>
-  </div>
+<template lang="pug">
+  #embedFrame
+    embedFrameElement
 </template>
-<style scoped>
-#embedBodyFrame {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 54px;
-  background-color: #121212;
-}
-</style>
+<script>
+import embedFrameElement from "../embedFrame.vue";
+export default {
+  name: "embedFrame",
+  data() {
+    return {
+      iframe: {
+        src: "https://stats.asspoop.com/d/survival-minecraft/survival-minecraft-server?orgId=1&refresh=1s&kiosk"
+      }
+    }
+  },
+  components: {
+    embedFrameElement,
+  },
+};
+</script>

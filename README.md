@@ -1,4 +1,4 @@
-# asspoop-network-maps
+# asspoop-network
 
 ## Project setup
 ```

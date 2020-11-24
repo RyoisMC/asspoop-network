@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import globalNav from "./components/globalNav.vue";
+import globalNav from "./components/global/navbar.vue";
 
 export default {
   name: "App",

@@ -1,7 +1,6 @@
-<template>
-  <div class="particles">
-    <div id="particles-js"></div>
-  </div>
+<template lang="pug">
+.particles
+  #particles-js
 </template>
 <script>
 import "particles.js";
