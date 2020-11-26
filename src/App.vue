@@ -1,7 +1,7 @@
 <template lang="pug">
-  #app
-    globalNav
-    router-view
+#app
+  globalNav
+  router-view
 </template>
 
 <script>
@@ -9,6 +9,27 @@ import globalNav from "./components/global/navbar.vue";
 
 export default {
   name: "App",
+  data: function () {
+    return {
+      self_minecraft_username: "null",
+      branding_name: "Asspoop Network"
+    }
+  },
+  created() {
+    var axios = require("axios");
+    const vm = this;
+    axios
+      .get("https://api.asspoop.com/lookup_self")
+      .then(function (response) {
+        const me = response.data;
+        if (!response.data.error) {
+          vm.self_minecraft_username = me.minecraft.username;
+        }
+      })
+      .catch(function (error) {
+        console.log(error.message);
+      });
+  },
   components: {
     globalNav,
   },
