@@ -23,7 +23,11 @@ export default {
       .then(function (response) {
         const me = response.data;
         if (!response.data.error) {
-          vm.self_minecraft_username = me.minecraft.username;
+          if(me.minecraft.username){
+            vm.self_minecraft_username = me.minecraft.username;
+          }else{
+            vm.self_minecraft_username = "Guest";
+          }
         }
       })
       .catch(function (error) {
