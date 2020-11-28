@@ -23,12 +23,13 @@ export default {
       .then(function (response) {
         const me = response.data;
         if (!response.data.error) {
-          if(me.minecraft.username){
+          if(me.minecraft.username !== null){
             vm.self_minecraft_username = me.minecraft.username;
           }else{
             vm.self_minecraft_username = "Guest";
           }
         }
+            vm.self_minecraft_username = "Guest";
       })
       .catch(function (error) {
         console.log(error.message);
