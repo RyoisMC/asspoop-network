@@ -6,7 +6,7 @@
       b-navbar-nav
         <menu-item v-for="(r,i) in routes" :key="i" :route="r"></menu-item>
       b-navbar-nav.ml-auto
-        b-nav-text(class="name") Hello, {{this.$parent.self_minecraft_username}}
+        b-nav-text(v-if="this.$parent.show_self_minecraft_username" class="name") Hello, {{this.$parent.self_minecraft_username}}
 
 </template>
 <script>

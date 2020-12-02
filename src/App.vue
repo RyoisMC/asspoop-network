@@ -12,6 +12,7 @@ export default {
   data: function () {
     return {
       self_minecraft_username: "null",
+      show_self_minecraft_username: false,
       branding_name: "Asspoop Network"
     }
   },
@@ -25,11 +26,9 @@ export default {
         if (!response.data.error) {
           if(me.minecraft.username !== null){
             vm.self_minecraft_username = me.minecraft.username;
-          }else{
-            vm.self_minecraft_username = "Guest";
+            vm.show_self_minecraft_username = true;
           }
         }
-            vm.self_minecraft_username = "Guest";
       })
       .catch(function (error) {
         console.log(error.message);
