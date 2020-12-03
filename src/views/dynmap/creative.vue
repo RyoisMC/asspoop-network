@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       iframe: {
-        src: "https://asspoop.com/maps/proxy/creative/"
+        src: "https://asspoop.com/maps/proxy/creative/?worldname=world&mapname=flat&zoom=2"
       }
     }
   },
