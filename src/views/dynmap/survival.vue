@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       iframe: {
-        src: "https://asspoop.com/maps/proxy/survival/?worldname=world&mapname=flat&zoom=2"
+        src: "https://mc.ryois.net/maps/proxy/survival/?worldname=world&mapname=flat&zoom=2"
       }
     }
   },

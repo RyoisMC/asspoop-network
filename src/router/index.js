@@ -2,10 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import homepage from '../views/homepage.vue';
 import survivalDynmap from '../views/dynmap/survival.vue';
-import creativeDynmap from '../views/dynmap/creative.vue';
 import mc01Grafana from '../views/grafana/mc01.vue';
 import survivalGrafana from '../views/grafana/survival.vue';
-import creativeGrafana from '../views/grafana/creative.vue';
 import pageNotFound from '../views/pageNotFound.vue';
 
 Vue.use(VueRouter);
@@ -30,29 +28,11 @@ const routes = [
         },
     },
     {
-        path: '/dynmap/server/creative',
-        name: 'Creative Dynmap',
-        component: creativeDynmap,
-        meta: {
-            title: 'Creative Dynmap',
-            visible: true
-        },
-    },
-    {
       path: '/grafana/server/survival',
       name: 'Survival Server Stats',
       component: survivalGrafana,
       meta: {
           title: 'Survival Server Stats',
-          visible: true
-      },
-    },
-    {
-      path: '/grafana/server/creative',
-      name: 'Creative Server Stats',
-      component: creativeGrafana,
-      meta: {
-          title: 'Creative Server Stats',
           visible: true
       },
     },
