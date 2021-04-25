@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       iframe: {
-        src: "https://stats.asspoop.com/d/survival-minecraft/survival-minecraft-server?orgId=1&refresh=1s&kiosk"
+        src: "https://stats-mc.ryois.net/d/survival-minecraft/survival-minecraft-server?orgId=1&refresh=1s&kiosk"
       }
     }
   },

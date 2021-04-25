@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       iframe: {
-        src: "https://stats.asspoop.com/d/rYdddlPWk/mc01-server-stats?orgId=1&refresh=5s&kiosk"
+        src: "https://stats-mc.ryois.net/d/rYdddlPWk/mc01-server-stats?orgId=1&refresh=5s&kiosk"
       }
     }
   },
