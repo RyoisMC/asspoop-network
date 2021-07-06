@@ -1,4 +1,4 @@
-# asspoop-network
+# minecraft-network
 
 ## Project setup
 ```
